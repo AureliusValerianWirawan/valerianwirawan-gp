@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Valerian – Fullstack Developer | IT Infrastructure</title>
+  <meta name="title" content="Portofolio Valerian – Fullstack Developer & IT Specialist">
+  <meta name="description" content="Portofolio Valerian, seorang Fullstack Developer, IT Infrastructure & Security Specialist. Berpengalaman dalam Laravel, Tailwind, PostgreSQL, DevOps, dan pengembangan sistem berskala besar.">
+
+  <!-- Keywords (Tidak terlalu impact, tapi tetap oke dipakai) -->
+  <meta name="keywords" content="Valerian, Fullstack Developer, IT Infrastructure, Laravel Developer, TailwindCSS, PostgreSQL, IT Security, Backend Developer, Portfolio Indonesia">
+  <meta name="author" content="Valerian Wirawan">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Theme Color (Nice for mobile browser UI) -->
+<meta name="theme-color" content="#1f2937">
+  
+  <script type="module" src="http://[::1]:5173/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" /><script type="module" src="http://[::1]:5173/resources/js/app.js"></script>  <link rel="icon" type="image/png" href="http://localhost/images/logo/logo.png" class="h-8 w-auto rounded">
+  <link rel="shortcut icon" href="http://localhost/images/logo/logo.png" class="h-8 w-auto rounded">
+
+</head>
+
+<body class="h-full">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+         <img src="http://localhost/images/logo/logo.png" alt="Logo" class="h-8 w-auto rounded">
+
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/" class="text-sm/6 font-semibold text-white">Profile</a>
+        <!-- <a href="#" class="text-sm/6 font-semibold text-white">Timeline</a> -->
+        <a href="/love" class="text-sm/6 font-semibold text-white">Love</a>
+        <a href="/koor" class="text-sm/6 font-semibold text-white">Koor</a>
+
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <!-- <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a> -->
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="http://localhost/images/logo/logo.png" alt="Logo" class="h-8 w-auto rounded">
+
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Profile</a>
+                  <!-- <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Timeline</a> -->
+                  <a href="/love" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Love</a>
+                  <a href="/koor" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Koor</a>
+
+                </div>
+                <!-- <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div> -->
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+
+
+  </header>
+  <div class="bg-gray-900">
+
+    <!-- <div class="relative isolate px-6 pt-14 lg:px-8"> -->
+    <div class="relative isolate px-6 lg:px-8">
+
+      <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
+      </div>
+      <!-- <main class="pt-24"> -->
+      
+
+<!-- <main class="pt-24"> -->
+<div class="pt-24"></div>
+
+<div class="px-4 md:px-8 lg:px-16">
+  <div class="overflow-x-auto">
+    <table class="table-fixed w-full border border-gray-300 text-sm text-white">
+
+
+      <thead>
+        <tr class="bg-gray-800">
+          <!-- <th class="border border-gray-600 px-3 py-2 text-left">Tanggal</th>
+        <th class="border border-gray-600 px-3 py-2 text-left">Tema Misa</th> -->
+
+          <th rowspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">
+            Tanggal
+          </th>
+
+          <th rowspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">
+            Tema Misa
+          </th>
+
+          <th colspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Sabtu 17.00</th>
+          <th colspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Minggu 07.00</th>
+          <th colspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Minggu 10.00</th>
+          <th colspan="2" class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Minggu 17.00</th>
+        </tr>
+
+        <tr class="bg-gray-700">
+          <!-- <th class="border border-gray-600 px-3 py-2"></th>
+        <th class="border border-gray-600 px-3 py-2"></th> -->
+
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Pemazmur</th>
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Koor</th>
+
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Pemazmur</th>
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Koor</th>
+
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Pemazmur</th>
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Koor</th>
+
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Pemazmur</th>
+          <th class="border border-gray-600 px-3 py-2 text-center align-middle whitespace-normal break-words max-w-[120px]">Koor</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- ROW 1 -->
+        <tr class="bg-gray-900">
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">3 / 4 JANUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HR. PENAMPAKAN TUHAN</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Nadya</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Daud</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Kris Ombo</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">WKRI Cabang</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Anggi Aruan</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Assisi</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px] whitespace-normal break-words max-w-[120px]">Intan</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">OMK Lourdes</td>
+        </tr>
+
+        <!-- ROW 2 -->
+        <tr class="bg-gray-900">
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">10 / 11 JANUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PESTA PEMBAPTISAN TUHAN</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Nita</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Antonius Lingk. 1</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Olin</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PWK St. Monica</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Villy</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Lourdes</td>
+
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Mario</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Koor Gregorian</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">17 / 18 JANUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. BIASA II</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Tya</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Nasareth</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wilbert</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PSD AL</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Daniel Sutanto</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Clara Choir</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Eggi</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Theresia</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">24 / 25 JANUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. BIASA III</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Fr. (Padua)</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PDKK</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Sr. Elisa</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Lansia</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Veve</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">OMK Musica Caeli</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Dian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Mazmurian</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">31 JAN / 1 FEB</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. BIASA IV</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Cindy</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PDOMK</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Titta</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">WK Daud</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Alesandro</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Koor Paskalis</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Felicia</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Kristoforus</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">7 / 8 FEBRUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. BIASA V</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Fr. (Xaverian)</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Maria Goretti</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Intan</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Keluarga Kudus</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Mario</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Maria Fatima Lingk 2,3,4</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Olin</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PS. St. Michael</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">14 / 15 FEBRUARI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. BIASA VI</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Kris Ombo</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Daud</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Villy</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Assisi</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Veve</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">VAC</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Nadya</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">BIR</td>
+        </tr>
+
+        <!-- RABU ABU (format khusus) -->
+        <!-- <tr class="bg-gray-50"> -->
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">18 FEB</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HARI RABU ABU</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Alfi</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Koor Umat</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Fr. Xaverian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="2">Koor : Biara Frater Xaverian</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">21 / 22 FEB</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. PRAPASKAH I</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Anggi Aruan</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Nasareth</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Tya</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Maria Fatima Lingk 5,6,7</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wilbert</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">IKKSU</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Daniel Sutanto</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Clara Choir</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">28 FEB / 1 MARET</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. PRAPASKAH II</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Titta</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Antonius Lingk. 2,3,4</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Nita</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">WK Maria Goretti</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Cindy</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">SMP Paskalis 3</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Dian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">OMK Lourdes</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">7 / 8 MARET</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. PRAPASKAH III</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Felicia</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Theresia</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Alesandro</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Lourdes</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Sr. Elisa</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">SMA Paskalis</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Eggi</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PSD AL</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">14 / 15 MARET</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. PRAPASKAH IV</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Intan</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Koor Gregorian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Olin</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Kristoforus</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Fr. Padua</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Biara Frater Padua</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Veve</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Mazmurian</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">21 / 22 MARET</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HM. PRAPASKAH V</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Villy</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">BIR</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Mario</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Nasareth</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Fr. Xaverian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">SD St. Mikael</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Kris Ombo</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PDOMK</td>
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">28 / 29 MARET</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">MINGGU PALMA</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Nadya</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Antonius Lingk. 1</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wilbert</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Daud</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Titus</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PS. St. Michael</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Dian</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PDKK</td>
+        </tr>
+
+        <!-- PEKAN SUCI -->
+        <!-- <tr class="bg-gray-50"> -->
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">2 APRIL</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">KAMIS PUTIH</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 17.00 – Koor Misa 1: Wil. Asisi</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 20.00 – Koor Misa 2: Wil. Maria Goretti</td>
+          <!-- <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4"></td> -->
+        </tr>
+
+        <!-- <tr class="bg-gray-50"> -->
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">3 APRIL</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">JUMAT AGUNG</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 15.00 – Koor Misa 1: Clara Choir</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 18.00 – Koor Misa 2: Wil. Keluarga Kudus</td>
+          <!-- <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4"></td> -->
+        </tr>
+
+        <!-- <tr class="bg-gray-50"> -->
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">4 APRIL</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">MALAM PASKAH</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 17.00 – Koor Misa 1: Koor Paskalis</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4">Jam 20.00 – Koor Misa 2: OMK Musica Caeli</td>
+          <!-- <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]" colspan="4"></td> -->
+        </tr>
+
+        <tr>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">5 APRIL</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">HARI RAYA PASKAH</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">WK Antonius</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">PCC</td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td>
+          <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]">Wil. Kristoforus</td>
+          <!-- <td class="border border-gray-700 px-1 md:px-3 py-2 text-xs md:text-sm whitespace-normal break-words max-w-[120px]"></td> -->
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      <!-- </main> -->
+
+      <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
